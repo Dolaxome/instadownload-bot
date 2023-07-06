@@ -37,7 +37,7 @@ func (b *Bot) handleMessage(message *tgbotapi.Message) error {
 	log.Printf("[%s] %s", message.From.UserName, message.Text)
 
 	//db open
-	connStr := "user=postgres password=admin dbname=postgres sslmode=disable"
+	connStr := "user={your DB username} password={your DB password} dbname={your DB name} sslmode=disable"
 	sqlDB, err := sql.Open("postgres", connStr)
 	if err != nil {
 		return err
