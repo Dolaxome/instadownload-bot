@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	bot, err := tgbotapi.NewBotAPI("your telegram API")
+	bot, err := tgbotapi.NewBotAPI("{your telegram API token}")
 	if err != nil {
 		log.Fatal(err)
 	}
